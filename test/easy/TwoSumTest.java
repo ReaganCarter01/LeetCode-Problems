@@ -17,6 +17,17 @@ public class TwoSumTest {
     }
 
     @Test
+    public void testTwoSumSameValues() {
+        TwoSum solution = new TwoSum();
+        int[] nums = {3,3};
+        int target = 6;
+        int[] expected = {0, 1};
+        int[] result = solution.twoSum(nums, target);
+
+        assertArrayEquals(expected, result);
+    }
+
+    @Test
     public void testTwoSumWithNoSolution() {
         TwoSum solution = new TwoSum();
         int[] nums = {1, 2, 3};
