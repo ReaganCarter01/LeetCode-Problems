@@ -24,8 +24,8 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>${project.basedir}/src</sourceDirectory> <!-- Point to your src directory -->
-        <testSourceDirectory>${project.basedir}/test</testSourceDirectory> <!-- Point to your test directory -->
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/test</testSourceDirectory>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
