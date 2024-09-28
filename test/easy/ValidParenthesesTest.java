@@ -9,7 +9,7 @@ public class ValidParenthesesTest {
     @Test
     public void vpEmpty(){
         ValidParentheses vp = new ValidParentheses();
-        String parentheses = "[";
+        String parentheses = "";
         boolean solution = false;
         boolean result = vp.isValid(parentheses);
 
@@ -21,6 +21,35 @@ public class ValidParenthesesTest {
         ValidParentheses vp = new ValidParentheses();
         String parentheses = "[]";
         boolean solution = true;
+        boolean result = vp.isValid(parentheses);
+
+        assertEquals(solution, result);
+    }
+    @Test
+    public void vpValidMultipleRelation(){
+        ValidParentheses vp = new ValidParentheses();
+        String parentheses = "[{{()}}]";
+        boolean solution = true;
+        boolean result = vp.isValid(parentheses);
+
+        assertEquals(solution, result);
+    }
+
+    @Test
+    public void vpInValidMultipleRelation(){
+        ValidParentheses vp = new ValidParentheses();
+        String parentheses = "}{{()}}]";
+        boolean solution = false;
+        boolean result = vp.isValid(parentheses);
+
+        assertEquals(solution, result);
+    }
+
+    @Test
+    public void vpInValid(){
+        ValidParentheses vp = new ValidParentheses();
+        String parentheses = "(}";
+        boolean solution = false;
         boolean result = vp.isValid(parentheses);
 
         assertEquals(solution, result);

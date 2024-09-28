@@ -1,19 +1,35 @@
 package easy;
 
-import java.util.HashMap;
+// Problem: https://leetcode.com/problems/valid-parentheses/submissions/1405183144/
+// Approach: Stack
+
+import java.util.Stack;
 
 public class ValidParentheses {
     public boolean isValid(String s){
-        HashMap<Character,Character> parenthesesMap = new HashMap<>();
+        Stack<Character> stack = new Stack<>();
 
-        parenthesesMap.put('(',')');
-        parenthesesMap.put('{','}');
-        parenthesesMap.put('[',']');
+        if(s.length() <= 1 || s.charAt(0) == '}' || s.charAt(0) == ')'||s.charAt(0) == ']') return  false;
 
-        for(int i = 0; i < s.length();i++){
+        for(char c: s.toCharArray()){
+
+            if(c == '['||c == '{' ||c == '(' ){
+                stack.push(c);
+            }
+            else if(c == ']' && !stack.isEmpty() && stack.peek() == '['){
+                stack.pop();
+            }
+            else if(c == '}' && !stack.isEmpty() && stack.peek() == '{'){
+                stack.pop();
+            }
+            else if(c == ')' && !stack.isEmpty() && stack.peek() == '('){
+                stack.pop();
+            }else{
+                return false;
+            }
 
         }
 
-        return false;
+        return stack.isEmpty();
     }
 }
