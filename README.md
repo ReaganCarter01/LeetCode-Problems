@@ -14,4 +14,3 @@ java Problem1
 
 ### 2. Running Tests
 Tests are located in the test/ directory. Each test file corresponds to a solution file. You can run the tests using a testing framework like JUnit.
-
