@@ -2,7 +2,7 @@ package easy;
 
 // Problem: https://leetcode.com/problems/roman-to-integer/description/
 // Approach: Use a hashmap based on Key value and check if the currentVal is less than the next value
-
+// Topics: Hash Table, Math, String
 /*
 - I can be placed before V (5) and X (10) to make 4 and 9.
 - X can be placed before L (50) and C (100) to make 40 and 90.

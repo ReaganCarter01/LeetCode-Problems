@@ -2,6 +2,7 @@ package easy;
 
 // Problem: https://leetcode.com/problems/valid-parentheses/submissions/1405183144/
 // Approach: Stack
+// Topic: Stack, String
 
 import java.util.Stack;
 

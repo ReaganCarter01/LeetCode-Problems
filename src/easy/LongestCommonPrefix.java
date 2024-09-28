@@ -1,5 +1,9 @@
 package easy;
 
+// Problem: https://leetcode.com/problems/longest-common-prefix/
+// Approach: Decrement Substring
+// Topics: String, Trie
+
 public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] s){
 

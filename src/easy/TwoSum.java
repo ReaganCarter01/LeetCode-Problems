@@ -3,7 +3,7 @@ package easy;
 
 // Problem: https://leetcode.com/problems/two-sum/
 // Approach: Use a hashmap to find the two numbers that add up to the target.
-
+// Topics: Array, Hash Table
 /*
 Constraints:
 - 2 <= nums.length <= 104

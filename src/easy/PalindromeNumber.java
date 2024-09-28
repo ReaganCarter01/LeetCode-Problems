@@ -1,6 +1,7 @@
 package easy;
 // Problem: https://leetcode.com/problems/palindrome-number/
 // Approach: Split in half
+// Topics: Math
 
 /*
 Constraints:
