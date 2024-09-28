@@ -18,15 +18,6 @@ Output: [1,2]
 import java.util.HashMap;
 
 public class TwoSum {
-    public static void main(String[] args){
-        int [] nums = {3,2,4};
-        int target = 6;
-
-        int[] result = twoSum(nums, target);
-        System.out.println("Indices: " + result[0] + ", " + result[1]);
-
-    }
-
     public static int[] twoSum(int[] nums, int target) {
         //implement solution here
 
