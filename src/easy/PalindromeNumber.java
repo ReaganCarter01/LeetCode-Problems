@@ -24,20 +24,6 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 */
 
 public class PalindromeNumber {
-    public static void main(String[] args) {
-        // Test cases
-        int test1 = 121;
-        int test2 = -121;
-        int test3 = 10;
-        int test4 = 12321;
-
-        // Calling the method to check if the numbers are palindromes
-        System.out.println("Is " + test1 + " a palindrome? " + isPalindrome(test1));
-        System.out.println("Is " + test2 + " a palindrome? " + isPalindrome(test2));
-        System.out.println("Is " + test3 + " a palindrome? " + isPalindrome(test3));
-        System.out.println("Is " + test4 + " a palindrome? " + isPalindrome(test4));
-    }
-
     public static boolean isPalindrome(int value){
 
         // A negative number is not a palindrome
