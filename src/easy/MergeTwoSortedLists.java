@@ -1,8 +1,8 @@
 package easy;
 
-// Problem: https://leetcode.com/problems/longest-common-prefix/
-// Approach: Decrement Substring
-// Topics: String, Trie
+// Problem: https://leetcode.com/problems/merge-two-sorted-lists/
+// Approach:
+// Topics: Linked List, Recursion
 
 import DataStructures.ListNode;
 
